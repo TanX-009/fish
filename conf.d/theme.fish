@@ -1,3 +1,3 @@
-# if test -f ~/.cache/ags/user/generated/terminal/sequences.txt
-#     cat ~/.cache/ags/user/generated/terminal/sequences.txt
-# end
+if test -f ~/.colors/terminal/sequences.txt
+    cat ~/.colors/terminal/sequences.txt
+end
