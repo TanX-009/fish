@@ -25,7 +25,7 @@ function c
   read -f selection
 
   # Validate user input
-  if test "$selection" -le 0 -o "$selection" -ge (count $subdirs)
+  if test "$selection" -le 0 -o "$selection" -gt (count $subdirs)
       echo "Invalid selection"
       return 1
   end

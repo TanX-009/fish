@@ -21,3 +21,4 @@ alias nrd='npm run dev'
 alias r='ranger'
 
 alias cP='rsync --progress'
+alias loglink='curl -F 'file=@-' 0x0.st'
