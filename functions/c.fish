@@ -1,6 +1,6 @@
 function c
   # Assign arguments to variables for better readability
-  set target_directory (if test (count $argv) -ge 1; echo $argv[1]; else; echo "/SSD/C"; end)
+  set target_directory (if test (count $argv) -ge 1; echo $argv[1]; else; echo "$HOME/C"; end)
   set command_to_run (if test (count $argv) -ge 2; echo $argv[2]; else; echo "nvim"; end)
 
   # Change to the target directory
@@ -35,5 +35,7 @@ function c
   cd $selected_subdir
 
   # Run the specified command
-  eval $command_to_run
+  if test $selection -ne 1
+    eval $command_to_run
+  end
 end

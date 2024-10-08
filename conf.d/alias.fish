@@ -22,3 +22,6 @@ alias r='ranger'
 
 alias cP='rsync --progress'
 alias loglink='curl -F 'file=@-' 0x0.st'
+
+# remove with confirmation
+alias rm="rm -i"
