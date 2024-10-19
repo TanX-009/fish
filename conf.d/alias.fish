@@ -2,7 +2,7 @@
 alias grep='grep --color=auto'
 
 # ls colors
-alias ls="lsd"
+alias ls="eza"
 
 # yeet
 alias yeet="yay -Rns"
@@ -16,7 +16,8 @@ alias lt='ls --tree'
 
 # lazy apps
 alias n='nvim'
-alias gg='lazygit'
+alias lg='lazygit'
+alias lzd='lazydocker'
 alias nrd='npm run dev'
 alias r='ranger'
 
