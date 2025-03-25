@@ -19,6 +19,7 @@ alias n='nvim'
 alias lg='lazygit'
 alias lzd='lazydocker'
 alias nrd='npm run dev'
+alias brd='bun --bun run dev'
 alias r='ranger'
 
 alias cP='rsync --progress'
