@@ -26,7 +26,9 @@ alias cP='rsync --progress'
 alias loglink='curl -F 'file=@-' 0x0.st'
 
 # remove with confirmation
-alias rm="rm -i"
+# alias rm="rm -i"
 
 # mount with user permissions
 alias mnt="sudo mount -o uid=$(id -u),gid=$(id -g)"
+
+alias c="cnav ~/C"
