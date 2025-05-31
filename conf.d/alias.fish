@@ -32,3 +32,7 @@ alias loglink='curl -F 'file=@-' 0x0.st'
 alias mnt="sudo mount -o uid=$(id -u),gid=$(id -g)"
 
 alias c="cnav ~/C"
+
+# podman
+alias pod="podman"
+alias poc="podman-compose"
