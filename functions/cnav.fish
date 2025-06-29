@@ -11,6 +11,12 @@ function cnav
     if test -n "$selection"
         cd "$dir/$selection"
         echo "Selected: $dir/$selection"
+
+        # Source virtual environment if .venv/activate.fish exists
+        if test -f .venv/bin/activate.fish
+            source .venv/bin/activate.fish
+        end
+
         echo "(n)vim, (l)azygit, (o)pen nested dir or (Enter) to stay."
         read -n 1 -p "" key
 
