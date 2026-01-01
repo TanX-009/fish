@@ -1,7 +1,7 @@
 function cnav
     set dir ~/
     if test (count $argv) -gt 0
-        set dir $argv[1]  # Use provided directory
+        set dir $argv[1] # Use provided directory
     end
 
     set selection (ls -D $dir | fzf \
@@ -17,7 +17,7 @@ function cnav
             source .venv/bin/activate.fish
         end
 
-        echo "(n)vim, (l)azygit, (o)pen nested dir or (Enter) to stay."
+        echo "(n)vim, (l)azygit, (s)lumber, (o)pen nested dir or (Enter) to stay."
         read -n 1 -p "" key
 
         switch $key
@@ -25,6 +25,8 @@ function cnav
                 nvim
             case l
                 lazygit
+            case s
+                slumber
             case o
                 cnav ./
         end
